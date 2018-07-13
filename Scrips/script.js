@@ -51,4 +51,18 @@ var miFuncion=function(arg1,arg2,arg3)
 miResultado=miFuncion(10,10,20);
 console.log("El resultado es:" + resultado);
 
-var callback
+
+
+var palabra="Sometamos o matemos";
+var esPalindrome=function(palabra){
+    palabra=palabra.toLowerCase().replace(/\s/g,"");
+    var palabraalreves=palabra.reverse();
+    if (palabra==palabraalreves) {
+            return true;
+            console.log("Si es palindromo")
+    }
+    else {
+        return false;
+        console.log("No es palindromo")
+    }       
+}
